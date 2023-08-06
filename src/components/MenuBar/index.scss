@@ -1,0 +1,113 @@
+$menu-color: #343934;
+$menu-border-radius: 24px;
+$menu-scroll-color: #666;
+$menu-scroll-background-color: #343934;
+$menu-scroll-width: 4px;
+$menu-scroll-border-radius: 8px;
+$menu-scroll-button-height: 1px;
+$menu-plus-margin-bottom: 16px;
+$menu-comment-margin-right: 12px;
+
+$mb-8: 8px;
+
+.menu-bar {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    width: 200px;
+    margin-right: var(--pad-1);
+    margin-top: var(--pad-1);
+
+    scrollbar-width: thin;
+    scrollbar-color: $menu-scroll-color;
+
+    &::-webkit-scrollbar {
+        width: $menu-scroll-width;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $menu-scroll-color;
+        border-radius: $menu-scroll-border-radius;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $menu-scroll-background-color;
+    }
+
+    &::-webkit-scrollbar-button {
+        background-color: $menu-scroll-background-color;
+        height: $menu-scroll-button-height;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: var(--pad-3);
+    margin-left: var(--pad-1);
+    margin-right: var(--pad-2);
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.title {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    // align-items: center;
+}
+
+.fa-message {
+    margin-right: $menu-comment-margin-right;
+    margin-top: var(--pad-2);
+}
+
+.add-title {
+    margin-left: $mb-8;
+}
+
+.bin {
+    padding: var(--pad-tip);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu:hover .bin {
+    opacity: 1;
+}
+
+.menu-header {
+    display: flex;
+}
+
+.menu.plus-menu {
+    width: 100%;
+    margin-bottom: $menu-plus-margin-bottom;
+    margin-right: var(--pad-2);
+    color: white;
+    border: 1px solid white;
+    border-radius: $menu-scroll-border-radius;
+    background-color: var(--menu-color);
+}
+
+.menu.toggle-menu {
+    width: 10%;
+    margin-bottom: $menu-plus-margin-bottom;
+    margin-right: var(--pad-2);
+    color: white;
+    border: 1px solid white;
+    border-radius: $menu-scroll-border-radius;
+    background-color: var(--menu-color);
+}
+
+.menu:hover {
+    background-color: var(--highlight-color);
+    opacity: .8;
+
+}
+
+.menu.active {
+    background-color: var(--highlight-color);
+}

@@ -1,0 +1,76 @@
+:root {
+  --pad-tip: 2px;
+  --pad-1: 4px;
+  --pad-2: 8px;
+  --pad-3: 12px;
+  --pad-4: 16px;
+  --pad-5: 20px;
+  --pad-6: 24px;
+  --pad-7: 28px;
+
+  --highlight-color: #3f4e61;
+  
+  --dark-color: #363f39;
+
+  --footer-color:linear-gradient(0.25turn, #232938, #363854, #2b2e41);
+
+  --header-color: linear-gradient(0.25turn, #2e333b, #1f2227, #2e333b);
+}
+
+$side-bar-width: 200px;
+
+.app {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--pad-3);
+  background-color: var(--dark-color);
+  border-bottom: 2px solid lightgray;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-style: italic;
+}
+
+.app-container {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  background-color:  var(--dark-color);;
+  padding-top: var(--pad-tip);
+  border-radius: var(--pad-tip);
+}
+
+.menu-bar {
+  width: $side-bar-width;
+  margin-right: var(--pad-1);
+  margin-top: var(--pad-1);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-editor-container {
+  flex: 1;
+  display: flex;
+}
+
+.app-footer {
+  padding: var(--pad-3);
+  display: flex;
+  justify-content: end;
+  background: var(--footer-color);
+  font-size: small;
+}

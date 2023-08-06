@@ -1,0 +1,39 @@
+.title-input {
+    background-color: gray;
+    color: white;
+    border: 0;
+    border-radius: var(--pad-1);
+    padding: var(--pad-2);
+    width: 200px;
+    margin-left: var(--pad-1);
+    margin-right: 8px;
+    &:hover{
+        outline: none;
+    }
+}
+
+.mode-select {
+    background-color: gray;
+    color: white;
+    border: 0;   
+    border-radius: var(--pad-1);
+    padding: var(--pad-2);
+    &:hover{
+        outline: none;
+    }
+}
+
+.header-container {
+    display: flex;
+    padding: var(--pad-2);
+    justify-content: space-between;
+    border-radius: var(--pad-1);
+    background: var(--header-color);
+}
+
+.description-button {
+    margin-right: var(--pad-1);
+    color: green($color: #0d1435);
+    font-size: 1.3rem;
+    cursor: pointer;
+}

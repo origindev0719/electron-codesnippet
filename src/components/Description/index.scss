@@ -1,0 +1,29 @@
+.description-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-header {
+    padding: var(--pad-2);
+    color: white;
+}
+
+.description-content {
+    position: relative;
+    flex: 1;
+}
+
+.description-content textarea {
+    resize: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee;
+}
+
+.description-text {
+    padding: var(--pad-3);
+}
